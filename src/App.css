@@ -1,4 +1,4 @@
-.app {
+/* .app {
   height: 100vh;
   width: 100vw;
   transition: background-color 1s ease-in;
@@ -14,12 +14,84 @@
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 /*  Search bar */
 
 /* Current weather */
 
-div {
+/* div {
   border: 5px solid red;
+} */
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+  background-color: rgb(156,206,244);
+}
+#header{
+  background-color: rgb(117,158,218);
+  padding: 5px;
+  margin: 0;
+  border-style: none;
+}
+input{
+  padding: 1%;
+  color: white;
+  background-color: rgb(117,158,218);
+  border: none;
+}
+input:focus {
+  outline: none;
+  border-bottom: 2px solid white;
+}
+.button{
+  margin: 15px;
+  margin-left: 190px;
+  padding: 15px;
+  background-color: #5879c7;
+  border: none;
+}
+
+.part1{
+  text-align: center;
+}
+h3{
+  color: white;
+  margin-top: .7px;
+  margin-bottom: 35px;
+}
+.temp{
+  margin-bottom: 35px;
+  font-size: 1.2rem;
+}
+.humid{
+  font-size: .85rem;
+}
+.weather_of_the_day{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 70%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+.mainImage{
+  margin-top: 35px;
+}
+@media(max-width: 678px) {
+  .weather_of_the_day{
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    flex-direction: column;
+  }
+  .part1{
+    flex-direction: column;
+  }
+  
 }
